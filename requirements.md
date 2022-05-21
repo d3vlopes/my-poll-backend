@@ -13,7 +13,7 @@
 
 ### Requisitos funcionais
 
-[] - Deve ser possível votar em uma das opções
+[x] - Deve ser possível votar em uma das opções
 
 ### Regras de negócio
 
