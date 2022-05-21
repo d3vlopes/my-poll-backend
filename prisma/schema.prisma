@@ -21,3 +21,12 @@ model Poll {
   @@map("polls")
 }
 
+model Option {
+  id      String @id @default(uuid())
+  poll_id String
+  poll    Poll   @relation(fields: [poll_id], references: [id])
+  text    String
+  points  Int    @default(0)
+
+  @@map("options")
+}
