@@ -24,7 +24,7 @@
 ### Requisitos funcionais
 
 [x] - Deve ser possível listar todas as enquetes cadastradas no banco
-[] - Deve ser possível listar as enquetes por status(não iniciadas/em andamento/finalizadas.
+[x] - Deve ser possível listar as enquetes por status(não iniciadas/em andamento/finalizadas.
 )
 
 ### Regras de negócio
