@@ -23,13 +23,13 @@
 
 ### Requisitos funcionais
 
-[] - Deve ser possível listar todas as enquetes cadastradas no banco
+[x] - Deve ser possível listar todas as enquetes cadastradas no banco
 [] - Deve ser possível listar as enquetes por status(não iniciadas/em andamento/finalizadas.
 )
 
 ### Regras de negócio
 
-[] - Deve mostrar o título, data de início e término.
+[x] - Deve mostrar o título, data de início e término.
 
 ## Criação de opções
 
