@@ -9,4 +9,5 @@ export interface OptionCreateData {
 export interface IOptionRepository {
   create: (data: OptionCreateData) => Promise<ICreateOption>
   update: (id_option: string) => Promise<ICreateOption>
+  listByPollId: (id_poll: string) => Promise<ICreateOption[]>
 }

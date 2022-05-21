@@ -34,4 +34,17 @@ export class OptionRepository implements IOptionRepository {
 
     return updateOption
   }
+
+  async listByPollId(id_poll: string) {
+    const options = await prisma.option.findMany({
+      where: {
+        poll_id: id_poll,
+      },
+      include: {
+        poll: true,
+      },
+    })
+
+    return options
+  }
 }
