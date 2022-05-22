@@ -25,6 +25,7 @@ export class PollRepository implements IPollsRepository {
         question: true,
         start_date: true,
         end_date: true,
+        status: true,
       },
       orderBy: {
         created_at: 'desc',
