@@ -1,5 +1,5 @@
+import { io } from '../../app'
 import { prisma } from '../../database/prismaClient'
-import { ICreateOption } from '../../useCases/option/useCases/create/CreateOptionUseCase'
 
 import { IOptionRepository, OptionCreateData } from '../IOptionsRepository'
 
@@ -31,6 +31,12 @@ export class OptionRepository implements IOptionRepository {
         points: currentOption!.points + 1,
       },
     })
+
+    const updatePoints = {
+      points: updateOption.points,
+    }
+
+    io.emit('new_vote', updatePoints)
 
     return updateOption
   }
