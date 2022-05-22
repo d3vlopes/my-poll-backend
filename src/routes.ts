@@ -20,5 +20,5 @@ routes.post('/poll', createPollController.handle)
 routes.get('/polls', listAllPollsController.handle)
 routes.get('/polls/status', listPollsByStatusController.handle)
 
-routes.get('/option/:id', listOptionByPollIdController.handle)
+routes.get('/poll/:id', listOptionByPollIdController.handle)
 routes.put('/vote', updateOptionController.handle)
