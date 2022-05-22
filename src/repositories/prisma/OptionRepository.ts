@@ -43,6 +43,9 @@ export class OptionRepository implements IOptionRepository {
       include: {
         poll: true,
       },
+      orderBy: {
+        points: 'desc',
+      },
     })
 
     return options
