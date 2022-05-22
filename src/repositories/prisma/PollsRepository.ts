@@ -21,9 +21,13 @@ export class PollRepository implements IPollsRepository {
     const polls = await prisma.poll.findMany({
       where: {},
       select: {
+        id: true,
         question: true,
         start_date: true,
         end_date: true,
+      },
+      orderBy: {
+        created_at: 'desc',
       },
     })
 
