@@ -12,5 +12,4 @@ export interface PollCreateData {
 export interface IPollsRepository {
   create: (data: PollCreateData) => Promise<ICreatePoll>
   findAll: () => Promise<ICreatePoll[]>
-  findAllByStatus: (status: string) => Promise<ICreatePoll[]>
 }

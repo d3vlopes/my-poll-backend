@@ -34,14 +34,4 @@ export class PollRepository implements IPollsRepository {
 
     return polls
   }
-
-  async findAllByStatus(status: string) {
-    const polls = await prisma.poll.findMany({
-      where: {
-        status,
-      },
-    })
-
-    return polls
-  }
 }
