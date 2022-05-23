@@ -32,11 +32,14 @@ export class OptionRepository implements IOptionRepository {
       },
     })
 
-    const updatePoints = {
+    const newVote = {
+      id: updateOption.id,
+      poll_id: updateOption.poll_id,
+      text: updateOption.text,
       points: updateOption.points,
     }
 
-    io.emit('new_vote', updatePoints)
+    io.emit('new_vote', newVote)
 
     return updateOption
   }
